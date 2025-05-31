@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 100vw;
+  background: #3c3b3f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #605c3c,
+    #3c3b3f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #605c3c,
+    #3c3b3f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logout {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #ffb871;
+  color: rgb(51, 51, 51);
+  border: 0;
+}
+
+.form-Add {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #3c3b3fb0;
+  display: none;
+}
+
+.form {
+  position: relative;
+  color: white;
+  gap: 2em;
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffb871;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.exitBtn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.exitForm {
+  width: 1.5em;
+  cursor: pointer;
+}
+
+.seeMoreBtn {
+  cursor: pointer;
+  flex-grow: 4;
+  background-color: rgb(23, 172, 23);
+  color: white;
+  border: 0;
+  border-radius: 0.5em;
+  font-size: 15px;
+  padding: 0.5em;
+  background-color: #ee6a35;
+}
+
+.detailsTxt {
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.createText {
+  color: black;
+}
+
+.submitBtn {
+  background-color: rgb(23, 172, 23);
+  color: white;
+  border: 0;
+  border-radius: 1em;
+  font-size: 20px;
+  padding: 0.5em;
+  cursor: pointer;
+  outline: none;
+}
+
+.create {
+  padding: 1em;
+}
+
+.container {
+  flex-grow: 1;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.todoList {
+  flex-grow: 1;
+  background-color: red;
+  position: relative;
+}
+
+.addBtn {
+  border: 0;
+  background: none;
+}
+
+.plus {
+  width: 3em;
+  cursor: pointer;
+}
+
+.tasks {
+  background-color: white;
+  margin: 1em;
+  padding: 2em 1em 2em 1em;
+  line-height: 250%;
+  border-radius: 0px 0px 30px 30px;
+  border-top: 5px solid #ee6a35;
+}
+
+.timeAndSeeMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5em;
+}
+
+.deleteBtn {
+  /* width: 15em;
+  height: 3em; */
+  flex-grow: 1;
+  background-color: rgb(235, 75, 75);
+  color: white;
+  border: 0;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 1em;
+  gap: 1em;
+  cursor: pointer;
+}
+
+.doneBtn {
+  /* width: 42em;
+  height: 3em; */
+  flex-grow: 4;
+  background-color: rgb(23, 172, 23);
+  color: white;
+  border: 0;
+  border-radius: 0.5em;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.doneList {
+  flex-grow: 1;
+  background-color: yellow;
+  position: relative;
+}
+
+.toDoHeading {
+  color: black;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  position: relative;
+}
+
+.wrapper {
+  background-color: #ffb871;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
